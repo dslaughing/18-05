@@ -11,11 +11,12 @@
 			text-align: center;
 			
 		}
-		section{
+		.cube{
 			width:0px;
 			position:relative;
 			transform-style: preserve-3d;
 			display: inline-block;
+			/*transition: all 1s linear;*/
 			height:600px; 
 		}
 		
@@ -45,11 +46,11 @@
 			background:gold;
 		}
 		div:nth-child(3){
-			transform:rotateX(90deg) translateZ(-100px);
+			transform:rotateX(-90deg) translateZ(100px);
 			background:yellow;
 		}
 		div:nth-child(4){
-			transform:translateZ(-100px);
+			transform:  translateZ(-100px) rotateY(180deg);
 			background:green;
 		}
 		div:nth-child(5){
@@ -57,7 +58,7 @@
 			background:purple
 		}	
 		div:nth-child(6){
-			transform:rotateY(90deg) translateZ(-100px);
+			transform:rotateY(-90deg) translateZ(100px) ;
 			background:pink
 		}
 		
@@ -99,7 +100,7 @@
 	<body>
 		<header>
 			<p>按住让立方体active可以让它乱转，松开鼠标，或鼠标离开都会突然回到1 = =</p>
-		<section>
+		<section class="cube">
 		<div>5</div>
 		<div>1</div>
 		<div>6</div>
