@@ -6,7 +6,6 @@
 	</head>
 	<style>
 		header{
-			  /*让视角在整个外围*/
 			perspective: 800px;
 			perspective-origin: 50% 50%;
 			text-align: center;
@@ -17,9 +16,7 @@
 			position:relative;
 			transform-style: preserve-3d;
 			display: inline-block;
-			  /* hover的时候只需hover这个元素，不用hover整行*/
 			height:600px; 
-			/* 让absolute的div不用相对的那么高，设置高度能在header的视角看的比较下*/
 		}
 		
 		div{
@@ -38,7 +35,6 @@
  		    -ms-user-select: none;
             -o-user-select: none;
              user-select: none;
-			/*按住的时候会选中数字，避免选中数字*/
 		}
 		div:nth-child(1){
 			transform:rotateX(90deg) translateZ(100px);
@@ -69,15 +65,6 @@
 			0%{
 				transform: rotateY(0deg);
 				}
-			25%{
-				transform: rotateY(-90deg);
-				}
-			50%{
-				transform:rotateY(-180deg);
-			}
-			75%{
-				transform:rotateY(-270deg);
-			}
 			100%{
 				transform:rotateY(-360deg);
 			}	
